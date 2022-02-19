@@ -1,0 +1,33 @@
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/*navegação*/
+header {
+  background: #ff0200;
+}
+.container-navegacao {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.icones {
+  display: flex;
+  flex-wrap: wrap;
+}
+.icones li + li {
+  margin-left: 8px;
+}
+
+/*Notícia principal*/
+
+.destaque-dia {
+  max-width: 940px;
+  margin: 0 auto;
+}
