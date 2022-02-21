@@ -58,12 +58,34 @@ header {
 
 /*banner*/
 .barra-vinho {
-  width: 940px;
+  width: 938px;
   height: 49px;
   margin: 0 auto;
+  position: relative;
+  top: 49px;
+  right: 1px;
   background: #f0c83a;
 }
 .banner {
   max-width: 940px;
   margin: 0 auto 32px auto;
+}
+.banner p {
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+  left: 210px;
+  font-size: 2.3em;
+  font-weight: bold;
+  color: #f0c83a;
+}
+/*terceiro-destaque*/
+.terceiro-destaque {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20px 50px 20px;
+  grid-template-areas: 'noticia-ontem1';
 }
