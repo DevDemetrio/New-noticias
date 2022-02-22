@@ -9,6 +9,10 @@ a {
   margin: 0px;
   padding: 0px;
 }
+p {
+  padding: 0;
+  margin: 0;
+}
 ul {
   list-style: none;
 }
@@ -85,7 +89,16 @@ header {
   max-width: 940px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 20px 50px 20px;
-  grid-template-areas: 'noticia-ontem1';
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/*grupo notícia 1*/
+
+.grupo-noticias1 > div {
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background: tomato;
 }
