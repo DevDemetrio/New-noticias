@@ -84,21 +84,3 @@ header {
   font-weight: bold;
   color: #f0c83a;
 }
-/*terceiro-destaque*/
-.terceiro-destaque {
-  max-width: 940px;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/*grupo notícia 1*/
-
-.grupo-noticias1 > div {
-  margin-bottom: 8px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  background: tomato;
-}
