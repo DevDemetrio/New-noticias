@@ -95,86 +95,84 @@ header {
 }
 /*grupo noticias 1*/
 
-.terceiro-destaque {
+.container {
   max-width: 940px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 55px 40px 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    'titulo-semana-ontem1   titulo-semana-ontem1      titulo-destaque-semana  titulo-destaque-semana     titulo-destaque-semana      titulo-semana2   titulo-semana2'
-    'foto-noticia-ontem-1   noticia-ontem-1           destaque-destaque-semana destaque-destaque-semana  destaque-destaque-semana     info-semana2      foto-semana2'
-    'foto-noticia-ontem-2   noticia-ontem-2           destaque-destaque-semana destaque-destaque-semana destaque-destaque-semana       info-semana3     foto-semana3'
-    'foto-noticia-ontem-3   noticia-ontem-3           destaque-noticias        destaque-noticias        destaque-noticias              info-semana4     foto-semana4';
+    'item2 item1 item3'
+    'item4 item1 item5'
+    'item6 item1 item7';
+  align-items: center;
+}
+.item1 {
+  grid-area: item1;
+  margin: 0 auto;
+}
+.item2 {
+  grid-area: item2;
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
 
-/*Notícias ontem 1*/
-.titulo-semana-ontem1 {
-  grid-area: titulo-semana-ontem1;
-  background: yellow;
-  text-align: center;
-}
-.foto-noticia-ontem-1 {
-  grid-area: foto-noticia-ontem-1;
-}
-.noticia-ontem-1 {
-  grid-area: noticia-ontem-1;
-}
-.foto-noticia-ontem-2 {
-  grid-area: foto-noticia-ontem-2;
-}
-.noticia-ontem-2 {
-  grid-area: noticia-ontem-2;
-}
-.foto-noticia-ontem-3 {
-  grid-area: foto-noticia-ontem-3;
-}
-.noticia-ontem-3 {
-  grid-area: noticia-ontem-3;
+.item3 {
+  grid-area: item3;
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
 
-/*Notícia destaque*/
-.titulo-destaque-semana {
-  grid-area: titulo-destaque-semana;
-  background: brown;
-  text-align: center;
+.item4 {
+  grid-area: item4;
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
-.destaque-destaque-semana {
-  grid-area: destaque-destaque-semana;
-  margin: 0 auto;
-  background: cornflowerblue;
+.item5 {
+  grid-area: item5;
+  display: grid;
+  grid-template-columns: 100px 200px;
 }
-.destaque-noticias {
-  grid-area: destaque-noticias;
+.item6 {
+  grid-area: item6;
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
-.destaque-noticias {
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: center;
+.item7 {
+  grid-area: item7;
+  display: grid;
+  grid-template-columns: 100px 1fr;
 }
-/*Motícia ontem 2*/
-.titulo-semana2 {
-  grid-area: titulo-semana2;
-  background: chartreuse;
-  text-align: center;
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'item2 item1'
+      'item3 item1'
+      'item4 item1'
+      'item5 item1'
+      'item6 item1'
+      'item7 item1';
+    align-items: center;
+  }
 }
-.foto-semana2 {
-  grid-area: foto-semana2;
-  background: burlywood;
-}
-.info-semana2 {
-  grid-area: info-semana2;
-  background: blue;
-}
-.foto-semana3 {
-  grid-area: foto-semana3;
-}
-.info-semana3 {
-  grid-area: info-semana3;
-}
-.foto-semana4 {
-  grid-area: foto-semana4;
-}
-.info-semana4 {
-  grid-area: info-semana4;
+@media (max-width: 640px) {
+  .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      'item1'
+      'item2 '
+      'item3 '
+      'item4 '
+      'item5 '
+      'item6 '
+      'item7 ';
+  }
 }
