@@ -23,6 +23,7 @@ img {
 /*navegação*/
 header {
   background: #ff0200;
+  padding: 0 10px 0 10px;
 }
 .container-navegacao {
   max-width: 940px;
@@ -42,7 +43,9 @@ header {
 }
 
 /*Notícia principal*/
-
+main {
+  padding: 0 10px 0 10px;
+}
 .destaque-dia {
   max-width: 940px;
   margin: 0 auto 32px auto;
@@ -61,29 +64,12 @@ header {
 }
 
 /*banner*/
-.barra-vinho {
-  width: 938px;
-  height: 49px;
-  margin: 0 auto;
-  position: relative;
-  top: 49px;
-  right: 1px;
-  background: #f0c83a;
-}
+
 .banner {
   max-width: 940px;
   margin: 0 auto 32px auto;
 }
-.banner p {
-  max-width: 940px;
-  margin: 0 auto;
-  position: relative;
-  top: 200px;
-  left: 210px;
-  font-size: 2.3em;
-  font-weight: bold;
-  color: #f0c83a;
-}
+
 .terceiro-destaque {
   max-width: 940px;
   margin: 0 auto;
@@ -175,4 +161,20 @@ header {
       'item6 '
       'item7 ';
   }
+}
+
+/*footer*/
+footer {
+  margin-top: 32px;
+  padding: 20px 10px 20px 10px;
+  background: #ff0200;
+}
+.roda-pe {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.roda-pe a + a {
+  margin-left: 4px;
 }
