@@ -1,4 +1,4 @@
-# **projeto da página de New notícias**
+# **Projeto da página de New notícias**
 
 ## Tecnologias utilizadas
 
